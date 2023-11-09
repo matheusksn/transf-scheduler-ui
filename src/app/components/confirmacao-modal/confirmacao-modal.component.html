@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Confirmação de Transferência</h2>
+<mat-dialog-content>
+  <p><strong>Conta de Origem:</strong> {{ data.transferenciaRequest.contaOrigem }}</p>
+  <p><strong>Conta de Destino:</strong> {{ data.transferenciaRequest.contaDestino }}</p>
+  <p><strong>Valor Original:</strong> {{ data.transferenciaRequest.valor | currency:'BRL' }}</p>
+  <p><strong>Taxa:</strong> {{ data.taxa * 100 }}%</p>
+  <p><strong>Valor Total:</strong> {{ data.valorComTaxa | currency:'BRL' }}</p>
+  <p><strong>Data de Transferência:</strong> {{ data.transferenciaRequest.dataTransferencia | date:'mediumDate' }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button color="primary" (click)="fecharModal(true)">Confirmar</button>
+  <button mat-button (click)="fecharModal(false)">Cancelar</button>
+</mat-dialog-actions>

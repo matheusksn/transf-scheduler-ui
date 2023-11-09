@@ -1,0 +1,17 @@
+.radius-style {
+  background-color: #141414;
+  color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header,
+.table-cell {
+  color: #ffffff;
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+<div style="margin-top: 20px;">
+<form [formGroup]="transferenciaForm" (ngSubmit)="abrirModalConfirmacao()" style="display: flex; flex-direction: column; align-items: center;"> 
+    <mat-form-field>
+      
+      <input matInput placeholder="Conta Origem (10 dígitos)" pattern="[0-9]{10}" formControlName="contaOrigem">
+    </mat-form-field>
+  <br>
+    <mat-form-field>
+      <input matInput placeholder="Conta Destino (10 dígitos)" pattern="[0-9]{10}" formControlName="contaDestino">
+    </mat-form-field>
+    <br>
+
+  <mat-form-field>
+    <input matInput placeholder="Valor" formControlName="valor" type="number">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="Data de Transferência" formControlName="dataTransferencia" [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <br>
+
+  <button mat-button type="submit" [disabled]="!transferenciaForm.valid">Agendar Transferência</button>
+</form>
+</div>
