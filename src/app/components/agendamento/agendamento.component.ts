@@ -46,6 +46,8 @@
         dialogRef.afterClosed().subscribe((confirmado: boolean) => {
           if (confirmado) {
             this.agendarTransferencia();
+            dialogRef.close()
+  
           }
         });
       }
@@ -77,7 +79,7 @@
       const diasParaTransferencia = this.calcularDiasParaTransferencia(dataTransferencia);
       let taxa = 0.0;
 
-      if (diasParaTransferencia === 0) {
+      if (diasParaTransferencia == 0) {
         taxa = 0.025;
       } else if (diasParaTransferencia >= 1 && diasParaTransferencia <= 10) {
         taxa = 0.0;
