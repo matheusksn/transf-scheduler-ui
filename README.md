@@ -1,27 +1,22 @@
-# TransfSchedulerUi
+***Este é o frontend para a aplicação de Agendamento de Transferências Financeiras.***
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Tecnologias Utilizadas:
+* Angular: ^16.0.0
+* Angular CLI: ~16.0.2
+* Angular Material: ^16.2.12
+* RxJS: ~7.8.0
 
-## Development server
+***Decisões Arquiteturais:*** 
+Para o design do frontend, busquei uma estrutura simples e modular. Cada parte desempenha uma função específica para facilitar a manutenção.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+***Como Iniciar o Projeto:***
+Com o npm/node instalado, seguir os seguintes passos:
 
-## Code scaffolding
+Navegue até o diretório transf-scheduler-ui e em seguida instale as dependências do projeto:
+   **npm install**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+***Inicie o servidor de desenvolvimento:***
+  **npm start**
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+***Acesse a aplicação no navegador em 'http://localhost:4200' ***
