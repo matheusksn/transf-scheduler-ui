@@ -20,8 +20,8 @@
         </ng-container>
 
         <ng-container matColumnDef="taxa">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-header">Taxa</th>
-          <td mat-cell *matCellDef="let transferencia" class="table-cell">{{ transferencia.taxa | currency }}</td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-header">Valor com taxa</th>
+          <td mat-cell *matCellDef="let transferencia" class="table-cell">{{ transferencia.valorComTaxa | currency }}</td>
         </ng-container>
 
         <ng-container matColumnDef="dataTransferencia">
